@@ -8,3 +8,7 @@ hbs.registerHelper('capitalizar', (texto) => {
 
     return palabras.join(' ');
 });
+
+hbs.registerHelper('getAnio', () => {
+    return new Date().getFullYear();
+});

@@ -11,10 +11,6 @@ app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/parciales');
 app.set('view engine', 'hbs'); //rendiriza la vista 
 
-hbs.registerHelper('getAnio', () => {
-    return new Date().getFullYear();
-});
-
 
 
 app.get('/', (req, res) => {
