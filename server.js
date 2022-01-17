@@ -24,23 +24,6 @@ app.get('/acerca', (req, res) => {
     });
 });
 
-/*
-app.get('/', (req, res) => {
-    //res.send('Hola Mundo desde Express!!');
-
-    let salida = {
-        nombre: 'Alexis',
-        edad: 29,
-        url: req.url
-    }
-
-    res.send(salida);
-})
-
-app.get('/data', (req, res) => {
-    res.send('data data data');
-});*/
-
 app.listen(port, () => {
     console.log(`Escuchando peticiones en el puerto ${port}`);
 });
