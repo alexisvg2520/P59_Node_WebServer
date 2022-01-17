@@ -11,8 +11,6 @@ app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/parciales');
 app.set('view engine', 'hbs'); //rendiriza la vista 
 
-
-
 app.get('/', (req, res) => {
     res.render('home', {
         nombre: "AleXis",
